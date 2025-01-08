@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!--poppins font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,500;1,600;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--tailwind css link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+    <!--font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--custom css-->
+    <style>
+        #media-scroll {
+            width: 100%;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            padding-bottom: 2rem;
+
+        }
+
+        #media-scroll::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        #media-scroll::-webkit-scrollbar-track {
+            background-color: none;
+        }
+
+        #media-scroll::-webkit-scrollbar-thumb {
+            background-color: #1D232C;
+            border-radius: 10px;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+
+</head>
+
+<body class="overflow-x-hidden">
+    <main>
+        <!--offer section-->
+        <div id="offer-section" class="bg-navyblue text-white flex gap-20 p-2 justify-center "
+            style="background-color: #1D232C;">
+            <p>Sign Up and <span class="font-bold">GET 20% OFF</span> for your first Order</p>
+            <p class="">X</p>
+        </div>
+
+        <!--wrapper-->
+        <div class="mx-5">
+            <!--Navbar-->
+            <nav class="flex justify-between mt-3 mb-3">
+                <p class="text-3xl font-bold lg:text-5xl">
+                    Nostra
+                </p>
+                <img src="assets/icons/menu.svg" alt="menue symbol" class="w-8 self-end lg:self-center md:hidden">
+                <div class="hidden md:block mt-2">
+                    <ul class="flex gap-6 items-center " id="nav-links">
+                        <li class="text-xl">Home</li>
+                        <li class="text-xl">New Arrival</li>
+                        <li class="text-xl">Most Wanted</li>
+                        <li class="text-xl">Collection</li>
+                        <li class="text-xl">Contact</li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <!--photo slider-->
+            <section>
+                <div class="relative flex">
+                    <div class="w-full  text-center absolute  text-white" style="top:30%;">
+                        <p class="font-bold text-xl mb-3 sm:text-4xl md:text-5xl lg:text-7xl">Level up your style with
+                            our</p>
+                        <p class=" font-bold text-xl  sm:text-2xl ">Summer collection</p>
+                        <button class=" flex-row bg-white text-black p-3 m-auto mt-4 rounded-md hidden sm:block">Shop
+                            now
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+                    </div>
+                    <div class=" w-full ">
+                        <img src="./assets/images/slider-one.jpg" alt="img-1"
+                            class="w-full border rounded-xl rounded-bl-none rounded-br-none">
+                        <img src="./assets/icons/left.svg" alt="left"
+                            class="absolute left-4 top-1/2 transform -translate-y-1/2 w-1/12 cursor-pointer ">
+
+                        <img src="./assets/icons/right.svg" alt="right"
+                            class="absolute right-4 top-1/2 transform -translate-y-1/2 w-1/12  cursor-pointer">
+                    </div>
+
+
+                </div>
+                <button class="text-sm font-poppines font-bold bg-black text-white p-1 w-full sm:hidden">Shop
+                    now</button>
+            </section>
+
+            <!--brand-->
+            <section class="mt-16">
+                <p class="text-3xl font-bold">Brand</p>
+
+                <!--brand container-->
+                <div class="flex justify-around mt-10 gap-20" id="media-scroll">
+                    <div class="flex flex-col">
+                        <img src="./assets/brands_png/adidas.png" alt="adidas" class="w-14 self-center">
+                        <p class="text-2xl">Addidas</p>
+                    </div>
+
+                    <!--puma-->
+                    <div class=" flex flex-col self-end">
+                        <img src="./assets/brands_png/Puma.png" alt="adidas" class="w-14 self-center ">
+                        <p class="text-2xl text-center">Puma</p>
+                    </div>
+
+                    <!--Simple-->
+                    <div class="flex flex-col ">
+                        <img src="./assets/brands_png/simple.png" alt="adidas" class="w-14 self-center">
+                        <p class="text-2xl text-center">Simple</p>
+                    </div>
+
+                    <!--Leaves-->
+                    <div class="flex flex-col ">
+                        <img src="./assets/brands_png/leaves.png" alt="adidas" class="w-14 self-center">
+                        <p class="text-2xl">Leaves</p>
+                    </div>
+
+                    <!--Behance-->
+                    <div class="flex flex-col ">
+                        <img src="./assets/brands_png/behance.png" alt="adidas" class="w-14 self-center">
+                        <p class="text-2xl ">Behance</p>
+                    </div>
+
+                    <!--Twitch-->
+                    <div class="flex flex-col ">
+                        <img src="./assets/brands_png/twitch.png" alt="adidas" class="w-14 self-center">
+                        <p class="text-2xl">Twitch</p>
+                    </div>
+
+                    <!--Behanc-->
+                    <div class="flex flex-col ">
+                        <img src="./assets/brands_png/behance.png" alt="adidas" class="w-14 self-center">
+                        <p class="text-2xl">Behance</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--We provide best customer experice-->
+            <section class="flex mt-14 justify-between gap-16">
+                <div class="font-semibold flex-grow-2 flex-shrink-0 sm:leading-normal">
+                    <h1 class=" font-bold text-[2vw] ">We provide best </h1>
+                    <h1 class=" font-bold text-[2vw]">customer experiences</h1>
+                </div>
+                <div class="flex justify-end">
+                    <img src="./assets/icons/pipe.svg" alt="pipe" class="w-1/12 ml-5">
+                    <p class="self-center font-bold text-slate-500 flex-shrink-0" style="font-size:1.5vw">We ensure that
+                        our customer have the best shopping experience</p>
+                </div>
+            </section>
+
+            <!--our services-->
+            <section class="flex justify-between mt-14 flex-shrink-0 gap-3" id="media-scroll">
+                <!--orginal product-->
+                <div class="">
+                    <div class="bg-gray-200 inline-block p-2 px-2 border rounded-md">
+                        <i class="fa-regular fa-circle-check" style="font-size:200%; color: #000000;"></i>
+                    </div>
+                    <p class="text-[60%] font-bold mt-1 sm:text-[80%] md:text-[120%]">Orginal Products</p>
+                    <p class="text-[40%] font-bold text-gray-400 mt-1 sm:text-[60%] md:text-[90%]">We provide money back
+                        gurantee if the product are not
+                        orgianal</p>
+                </div>
+
+                <!--satisfaction Guarantee-->
+                <div class="">
+                    <div class="bg-gray-200 inline-block p-2 px-2 border rounded-md">
+                        <i class="fa-regular fa-face-smile" style="font-size:200%; color: #000000;"></i>
+                    </div>
+                    <p class="text-[60%] font-bold mt-1 sm:text-[80%] md:text-[120%]">Satisfaction Guarantee</p>
+                    <p class="text-[40%] font-bold text-gray-400 mt-1 sm:text-[60%] md:text-[90%]">Exchange the product
+                        you've purchased if it dosen't fit on you</p>
+
+                </div>
+
+                <!--New Arrival Everybody-->
+                <div class="">
+                    <div class="bg-gray-200 inline-block p-2 px-2 border rounded-md">
+                        <i class="fa-solid fa-cart-shopping" style="font-size:200%; color: #000000;"></i>
+                    </div>
+                    <p class="text-[60%] font-bold mt-1 sm:text-[80%] md:text-[120%]">New Arrival Everybody</p>
+                    <p class="text-[40%] font-bold text-gray-400 mt-1 sm:text-[60%] md:text-[90%]">We updates our
+                        collections almost everyday</p>
+                </div>
+
+                <!--Free & Free Shipping-->
+                <div class="">
+                    <div class="bg-gray-200 inline-block p-2 px-2 border rounded-md">
+                        <i class="fa-solid fa-truck-fast" style="font-size:200%; color: #000000;"></i>
+                    </div>
+                    <p class="text-[60%] font-bold mt-1 sm:text-[80%] md:text-[120%]">Free & Free Shipping</p>
+                    <p class="text-[40%] font-bold text-gray-400 mt-1 sm:text-[60%] md:text-[90%]">We offer fast and
+                        free shipping loyal customers</p>
+                </div>
+            </section>
+
+            <!--New Arrivals-->
+            <section>
+                <p class="text-2xl font-bold mb-4">New Arrivals</p>
+                <div class = "flex gap-4  justify-between">
+                    <div class="w-1/5 relative border rounded-md">
+                        <img src="./assets/images/shirts/beach_shirts/f2.jpg" alt="new-arrivals"
+                            class="w-full rounded-xl">
+
+                        <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
+                        <button
+                        class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-md p-1 px-1 z-30 w-fit h-fit text-[1.2vw]">Shop
+                            Now <i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="absolute w-full h-full top-0 left-0 bg-black bg-opacity-60"></div>
+                    </div>
+
+                    <div class="w-1/5 relative">
+                        <img src="./assets/images/shirts/beach_shirts/f2.jpg" alt="new-arrivals"
+                            class="w-full rounded-xl">
+
+                        <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
+                        <button
+                        class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-md p-1 px-1 z-30 w-fit h-fit text-[1.2vw]">Shop
+                            Now <i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="absolute w-full h-full top-0 left-0 bg-black bg-opacity-60"></div>
+                    </div>
+
+                    <div class="w-1/5 relative">
+                        <img src="./assets/images/shirts/beach_shirts/f2.jpg" alt="new-arrivals"
+                            class="w-full rounded-xl">
+
+                        <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
+                        <button
+                        class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-md p-1 px-1 z-30 w-fit h-fit text-[1.2vw]">Shop
+                            Now <i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="absolute w-full h-full top-0 left-0 bg-black bg-opacity-60"></div>
+                    </div>
+
+                    <div class="w-1/5 relative">
+                        <img src="./assets/images/shirts/beach_shirts/f2.jpg" alt="new-arrivals"
+                            class="w-full rounded-xl">
+
+                        <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
+                        <button
+                        class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-md p-1 px-1 z-30 w-fit h-fit text-[1.2vw]">Shop
+                            Now <i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="absolute w-full h-full top-0 left-0 bg-black bg-opacity-60"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Most Wanted-->
+            <section class = "mt-12">
+                <p class = "text-2xl font-bold mb-4">Most Wanted</p>
+                <div class = "flex gap-4 justify-between">
+                    <div class="w-1/5 relative border rounded-md">
+                        <img src="./assets/images/shirts/beach_shirts/f2.jpg" alt="new-arrivals"
+                            class="w-full rounded-xl">
+
+                        <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
+                        <button
+                        class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-md p-1 px-1 z-30 w-fit h-fit text-[1.2vw]">Shop
+                            Now <i class="fa-solid fa-arrow-right"></i></button>
+                        
+                    </div>
+
+                    <div class="w-1/5 relative">
+                        <img src="./assets/images/shirts/beach_shirts/f2.jpg" alt="new-arrivals"
+                            class="w-full rounded-xl">
+
+                        <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
+                        <button
+                        class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-md p-1 px-1 z-30 w-fit h-fit text-[1.2vw]">Shop
+                            Now <i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="absolute w-full h-full top-0 left-0 bg-black bg-opacity-60"></div>
+                    </div>
+
+                    <div class="w-1/5 relative">
+                        <img src="./assets/images/shirts/beach_shirts/f2.jpg" alt="new-arrivals"
+                            class="w-full rounded-xl">
+
+                        <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
+                        <button
+                        class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-md p-1 px-1 z-30 w-fit h-fit text-[1.2vw]">Shop
+                            Now <i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="absolute w-full h-full top-0 left-0 bg-black bg-opacity-60"></div>
+                    </div>
+
+                    <div class="w-1/5 relative">
+                        <img src="./assets/images/shirts/beach_shirts/f2.jpg" alt="new-arrivals"
+                            class="w-full rounded-xl">
+
+                        <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
+                        <button
+                        class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-md p-1 px-1 z-30 w-fit h-fit text-[1.2vw]">Shop
+                            Now <i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="absolute w-full h-full top-0 left-0 bg-black bg-opacity-60"></div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </div>
+
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
