@@ -48,8 +48,8 @@
         /* new arrivial*/
 
         /* Container for horizontal scrolling */
-        #media-scroll_new_arrivial{
-            
+        #media-scroll_new_arrivial {
+
             gap: 1rem;
             /* Spacing between cards */
             overflow-x: auto;
@@ -95,10 +95,11 @@
         <div id="offer-section" class="bg-navyblue gap-10 md:gap-24 self-center text-white flex  p-2 justify-center "
             style="background-color: #1D232C;">
             <p>Sign Up and <span class="font-bold ">GET 20% OFF</span> for your first Order</p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 place-self-center z-50">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" id = "close"
+                stroke="currentColor" class="size-6 place-self-center z-50 cursor-pointer">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-              </svg>
-              
+            </svg>
+
         </div>
 
         <!--wrapper-->
@@ -108,14 +109,41 @@
                 <p class="text-2xl font-bold lg:text-3xl uppercase">
                     Nostra
                 </p>
-                <img src="assets/icons/menu.svg" alt="menue symbol" class="w-8 self-end lg:self-center md:hidden">
+
+                <!--menu-->
+                <img src="assets/icons/menu.svg" alt="menue symbol"
+                    class="w-8 self-end lg:self-center cursor-pointer md:hidden" id="menu">
+
+                <!--side-nav-->
+                <div style="background-color: #1D232C; position: fixed;" id="side-navbar"
+                    class="absolute left-[-60%] top-0 w-[60%] transition-all duration-1000   z-40 md:hidden">
+                    <div class = "relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-5 absolute left-[90%]  top-5 place-self-center z-50 cursor-pointer text-white"
+                            id="side-nav-close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                    <ul style="color:white;" class="flex  h-[100vh] flex-col gap-6 items-left pl-5 pt-10"
+                        id="nav-links">
+                        <li class="text-xl hover:underline"><a href="index.html">Home</a></li>
+                        <li class="text-xl hover:underline"><a href="#collections">New Arrival</a></li>
+                        <li class="text-xl hover:underline"><a href="#mostwanted">Most Wanted</a></li>
+                        <li class="text-xl hover:underline"><a href="collections.html">Collection</a></li>
+                        <li class="text-xl hover:underline"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <!--desktop menu-->
                 <div class="hidden md:block mt-2">
                     <ul class="flex gap-6 items-center " id="nav-links">
-                        <li class="text-xl hover:underline"><a href = "#home">Home</a></li>
-                        <li class="text-xl hover:underline"><a href = "#collections">New Arrival</a></li>
-                        <li class="text-xl hover:underline"><a href = "#mostwanted">Most Wanted</a></li>
-                        <li class="text-xl hover:underline"><a href = "collections.html">Collection</a></li>
-                        <li class="text-xl hover:underline"><a href = "#contact">Contact</a></li>
+                        <li class="text-xl hover:underline"><a href="#home">Home</a></li>
+                        <li class="text-xl hover:underline"><a href="#collections">New Arrival</a></li>
+                        <li class="text-xl hover:underline"><a href="#mostwanted">Most Wanted</a></li>
+                        <li class="text-xl hover:underline"><a href="collections.html">Collection</a></li>
+                        <li class="text-xl hover:underline"><a href="#contact">Contact</a></li>
 
                     </ul>
                 </div>
@@ -147,13 +175,13 @@
 
 
                 </div>
-                <button class="text-sm font-poppines font-bold bg-black text-white p-1 w-full sm:hidden">Shop
+                <button class="text-sm font-poppines font-bold  text-white p-1 w-full sm:hidden" style = "background-color: #1D232C;">Shop
                     now</button>
             </section>
 
             <!--brand-->
             <section class="mt-16">
-                <p class="text-3xl font-bold">Brand</p>
+                <p class="text-2xl font-bold">Brand</p>
 
                 <!--brand container-->
                 <div class="flex justify-around mt-10 gap-x-10" id="media-scroll">
@@ -214,7 +242,7 @@
             </section>
 
             <!--our services-->
-            <section class="mt-14 flex justify-evenly flex-wrap gap-4" id = "ourservices">
+            <section class="mt-14 flex justify-evenly flex-wrap gap-4" id="ourservices">
                 <!--orginal product-->
                 <div class="flex flex-col items-start justify-start basis-[40%] md:basis-[20%]">
                     <div class="bg-gray-200 inline-block p-1 md:p-2 px-2 border rounded-md">
@@ -259,7 +287,7 @@
             </section>
 
             <!--New Arrivals-->
-            <section class="mt-16" id = "collections">
+            <section class="mt-16" id="collections">
                 <p class="text-2xl font-bold mb-4">New Arrivals</p>
                 <div class="flex gap-x-4  justify-between" id="media-scroll">
                     <div class="w-64 relative border rounded-xl">
@@ -329,12 +357,12 @@
                         <div class="absolute w-full h-full top-0 left-0 bg-black bg-opacity-60 rounded-xl"></div>
                     </div>
 
-                   
+
                 </div>
             </section>
 
             <!--Most Wanted-->
-            <section class="mt-12" id = "mostwanted">
+            <section class="mt-12" id="mostwanted">
                 <p class="text-2xl font-bold mb-4">Most Wanted</p>
                 <div class="flex gap-x-4  justify-between " id="media-scroll">
                     <div class="w-64 relative border rounded-2xl">
@@ -342,8 +370,9 @@
                             class="w-full  rounded-xl">
 
                         <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
-                        <p class="absolute top-0 left-0 transform text-white bg-red-500 font-semibold px-2 rounded-sm">Sale</p>
-                        
+                        <p class="absolute top-0 left-0 transform text-white bg-red-500 font-semibold px-2 rounded-sm">
+                            Sale</p>
+
                     </div>
 
                     <div class="w-64 relative border rounded-2xl">
@@ -351,8 +380,9 @@
                             class="w-full  rounded-xl">
 
                         <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
-                        <p class="absolute top-0 left-0 transform text-white bg-red-500 font-semibold px-2 rounded-sm">Sale</p>
-                        
+                        <p class="absolute top-0 left-0 transform text-white bg-red-500 font-semibold px-2 rounded-sm">
+                            Sale</p>
+
                     </div>
 
                     <div class="w-64 relative border rounded-2xl">
@@ -360,8 +390,9 @@
                             class="w-full  rounded-xl">
 
                         <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
-                        <p class="absolute top-0 left-0 transform text-white bg-red-500 font-semibold px-2 rounded-sm">Sale</p>
-                        
+                        <p class="absolute top-0 left-0 transform text-white bg-red-500 font-semibold px-2 rounded-sm">
+                            Sale</p>
+
                     </div>
 
                     <div class="w-64 relative border rounded-2xl">
@@ -369,8 +400,9 @@
                             class="w-full  rounded-xl">
 
                         <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
-                        <p class="absolute top-0 left-0 transform text-white bg-red-500 font-semibold px-2 rounded-sm">Sale</p>
-                        
+                        <p class="absolute top-0 left-0 transform text-white bg-red-500 font-semibold px-2 rounded-sm">
+                            Sale</p>
+
                     </div>
 
                     <div class="w-64 relative border rounded-2xl">
@@ -378,8 +410,9 @@
                             class="w-full  rounded-xl">
 
                         <!--absolute inset-0 m-auto  bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
-                        <p class="absolute top-0 left-0 transform text-white bg-red-500 font-semibold px-2 rounded-sm">Sale</p>
-                        
+                        <p class="absolute top-0 left-0 transform text-white bg-red-500 font-semibold px-2 rounded-sm">
+                            Sale</p>
+
                     </div>
 
 
@@ -388,40 +421,45 @@
                             class="w-full  rounded-xl">
 
                         <!--absolute inset-0 m-auto bg-white text-black  rounded-md p-1 px-2 z-30 h-fit w-fit"-->
-                        
-                        <p class="absolute top-0 left-0 transform text-white bg-red-500 font-semibold px-2 rounded-sm">Sale</p>
-                    </div>                    
+
+                        <p class="absolute top-0 left-0 transform text-white bg-red-500 font-semibold px-2 rounded-sm">
+                            Sale</p>
+                    </div>
                 </div>
 
-            
+
             </section>
 
             <!--offer section-->
-            <section class = "flex  mt-12 flex-col gap-5 md:grid md:grid-cols-2 md:gap-3 p-5 md:p-0" style = "background-color: #1D232C;">
-                <img src = "./assets/images/offer.jpg" class = "" alt = "offer-images">
-                
-                <div class = "md:px-1 text-white text-left md:self-center">
-                    <p class = "text-sm font-bold text-gray-400 uppercase">Limited Offer</p>
-                    <p class = "text-2xl  font-bold mt-3">35% off only this friday and get special gift</p>
-                    <button class = "text-xl  bg-white text-black py-2 px-3 rounded-md mt-3 mb-3">Grab it now <i class="fa-solid fa-arrow-right"></i></button>
+            <section class="flex  mt-12 flex-col gap-5 md:grid md:grid-cols-2 md:gap-3 p-5 md:p-0"
+                style="background-color: #1D232C;">
+                <img src="./assets/images/offer.jpg" class="" alt="offer-images">
+
+                <div class="md:px-1 text-white text-left md:self-center">
+                    <p class="text-sm font-bold text-gray-400 uppercase">Limited Offer</p>
+                    <p class="text-2xl  font-bold mt-3">35% off only this friday and get special gift</p>
+                    <button class="text-xl  bg-white text-black py-2 px-3 rounded-md mt-3 mb-3">Grab it now <i
+                            class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </section>
 
             <!--join news letter-->
-            <section class = "text-center mt-14" >
-                <p class = "text-3xl font-bold">Join Our News Letter</p>
+            <section class="text-center mt-14">
+                <p class="text-2xl font-bold">Join Our News Letter</p>
                 <p>Sign up for our email newspaper to get exclusive discounts, updatesn and more</p>
-                <input type = "text" class = "inline-block w-full m-auto p-2 mt-4 border outline-none border-black" placeholder = "Enter your email">
-                <button class="bg-black text-white px-5 py-3 rounded-md m-auto mt-4">Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+                <input type="text" class="inline-block w-full m-auto p-2 mt-4 border outline-none border-black"
+                    placeholder="Enter your email">
+                <button class="bg-black text-white px-5 py-3 rounded-md m-auto mt-4">Subscribe <i
+                        class="fa-solid fa-arrow-right"></i> </button>
 
             </section>
         </div>
 
         <!--footer-->
-        <section class = "text-white mt-14 p-9 flex flex-col gap-y-3" style="background-color: #1D232C;" id = "contact">
-            <p class = "font-bold text-2xl">Nostra</p>
+        <section class="text-white mt-14 p-9 flex flex-col gap-y-3" style="background-color: #1D232C;" id="contact">
+            <p class="font-bold text-2xl">Nostra</p>
             <p>Specializes in providing high-quality, stylish products for your wardrobe</p>
-            <div class = "flex gap-10">
+            <div class="flex gap-10">
                 <i class="fa-brands fa-instagram hover:text-pink-500"></i>
                 <i class="fa-brands fa-facebook hover:text-blue-500"></i>
                 <i class="fa-brands fa-x-twitter "></i>
@@ -431,6 +469,7 @@
 
     </main>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
