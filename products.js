@@ -2,7 +2,7 @@ const products = [
     {
         id:1,
         name:"Floral Summer Shirt",
-        src:"./assets/images/shirts/beach_shirts/f2.jpg",
+        src:"../assets/images/shirts/beach_shirts/f2.jpg",
         desc:"",
         price:220,
         tags:["new","blue","summer"]
@@ -11,7 +11,7 @@ const products = [
     {
         id:2,
         name:"Summer Green",
-        src:"./assets/images/shirts/beach_shirts/f4.jpg",
+        src:"../assets/images/shirts/beach_shirts/f4.jpg",
         desc:"",
         price:260,
         tags:["new","green","beach"]
@@ -20,7 +20,7 @@ const products = [
     {
         id:3,
         name:"Party Floral Shirt",
-        src:"products/f3.jpg",
+        src:"../assets/images/shirts/beach_shirts/f4.jpg",
         desc:"",
         price:399,
         tags:["old","red","party"]
@@ -29,7 +29,7 @@ const products = [
     {
         id:4,
         name:"Floral Summer Shirt",
-        src:"products/f4.jpg",
+        src:"../assets/images/shirts/beach_shirts/f4.jpg",
         desc:"",
         price:399,
         tags:["old","white","beach"]
@@ -37,7 +37,7 @@ const products = [
     {
         id:5,
         name:"Beach Shirt",
-        src:"products/f5.jpg",
+        src:"./assets/images/shirts/beach_shirts/f4.jpg",
         desc:"",
         price:579,
         tags:["old","white","beach"]
@@ -46,7 +46,7 @@ const products = [
     {
         id:6,
         name:"Shirt Party Red",
-        src:"products/f6.jpg",
+        src:"./assets/images/shirts/beach_shirts/f4.jpg",
         desc:"",
         price:579,
         tags:["old","red","party"]
@@ -55,7 +55,7 @@ const products = [
     {
         id:7,
         name:"Party Floral Shirt",
-        src:"products/f3.jpg",
+        src:"./assets/images/shirts/beach_shirts/f4.jpg",
         desc:"",
         price:399,
         tags:["old","red","party"]
@@ -63,7 +63,7 @@ const products = [
     {
         id:8,
         name:"Shirt Party Red",
-        src:"",
+        src:"./assets/images/shirts/beach_shirts/f4.jpg",
         desc:"",
         price:579,
         tags:["old","red","party"]
@@ -71,13 +71,11 @@ const products = [
     {
         id:9,
         name:"Floral Summer Shirt",
-        src:"products/f1.jpg",
+        src:"./assets/images/shirts/beach_shirts/f4.jpg",
         desc:"",
         price:220,
         tags:["new","blue","summer"]
     },
-
-
 ]
 
-export {products}
+export default {products}
