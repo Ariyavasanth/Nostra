@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Change Event</title>
+</head>
+<body>
+
+    <label>
+        <input type="checkbox" id="subscribeCheckbox">
+        Subscribe to our newsletter
+    </label>
+
+    <p id="status">You are not subscribed.</p>
+
+    <script>
+        // Select the checkbox and status paragraph
+        const checkbox = document.getElementById("subscribeCheckbox");
+        const status = document.getElementById ("status");
+
+        // Add event listener for change event
+        checkbox.addEventListener("change", (e)=>{
+          console.log(e.target.checked)
+        }); 
+
+       
+    </script>
+
+
+
+</body>
+</html>

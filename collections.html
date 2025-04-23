@@ -1,0 +1,297 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--tailwind Css-->
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+       
+
+        .product img {
+            width: 100%;
+        }
+
+        @media screen and (min-width:425px) {
+
+            .product {
+                flex-basis: 250px;
+            }
+
+            .product img {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <main class="w-full overflow-x-hidden ">
+        <!--offer sections-->
+        <div id="offer-section"
+            class="bg-navyblue w-[100vw] gap-10 md:gap-24 self-center text-white flex  p-2 justify-center "
+            style="background-color: #1D232C;">
+            <p>Sign Up and <span class="font-bold ">GET 20% OFF</span> for your first Order</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 place-self-center z-50 cursor-pointer" id="close">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+
+        </div>
+
+        <!--wrapper-->
+        <div class="mx-4 md:mx-3 lg:mx-5 xl:mx-5 2xl:mx-14">
+            <!--navbar-->
+            <nav class="flex justify-between my-4">
+                <p class="text-3xl font-bold lg:text-3xl uppercase">
+                    Nostra
+                </p>
+
+                <div class="flex gap-4">
+                    <!--menu icon-->
+                    <img src="./assets/icons/menu.svg" alt="menue symbol"
+                        class="w-8  self-end lg:self-center  md:hidden cursor-pointer" id="menu">
+
+                    <!--filter icon-->
+                    <img src="./assets/icons/filter.svg" alt="filter symbol"
+                        class="w-8 self-end lg:self-center md:hidden cursor-pointer" id="filter">
+                </div>
+
+                <!--side-nav-bar-->
+                <div style="background-color: #1D232C; " id="side-navbar"
+                    class="fixed h-[100vh] left-[-60%] w-[60%] bg-gray900 transition-all duration-1000 top-0  p-5 z-50">
+                    <div class = "m-10">
+                        <!--close-->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-5 absolute left-[90%]  top-5 place-self-center z-50 cursor-pointer text-white"
+                            id="side-nav-close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+
+                        <!--menus-->
+                        <ul style="color:white;" class="flex  h-[100vh] flex-col gap-6 items-left pl-5 pt-10"
+                            id="nav-links">
+                            <li class="text-xl hover:underline"><a href="index.html#home">Home</a></li>
+                            <li class="text-xl hover:underline"><a href="index.html#collections">New Arrival</a></li>
+                            <li class="text-xl hover:underline"><a href="index.html#mostwanted">Most Wanted</a></li>
+                            <li class="text-xl hover:underline"><a href="collections.html">Collection</a></li>
+                            <li class="text-xl hover:underline"><a href="contactus.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--desktop-nav-bar-->
+                <div class="hidden md:block mt-2">
+                    <ul class="flex gap-6 items-center " id="nav-links">
+                        <li class="text-xl hover:underline"><a href="index.html#home">Home</a></li>
+                        <li class="text-xl hover:underline"><a href="index.html#collections">New Arrival</a></li>
+                        <li class="text-xl hover:underline"><a href="index.html#mostwanted">Most Wanted</a></li>
+                        <li class="text-xl hover:underline"><a href="collections.html">Collection</a></li>
+                        <li class="text-xl hover:underline"><a href="contactus.html">Contact</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <!--hero sections-->
+            <section class="flex gap-5 items-stretch">
+
+                <!--left side-->
+                <div style="background-color: #F1F3F6;" class="hidden rounded-md p-5 md:flex md:gap-10">
+                    <!--filter options-->
+                    <div class="flex  flex-col gap-10 mt-5">
+                        <p class="text-3xl font-bold">Filter</p>
+                        <!--Occasion-->
+                        <div>
+                            <p class="text-2xl font-bold">Occasion</p>
+                            <div class="flex gap-2 mt-2">
+                                <input class="inpCheck" type="checkbox"  value="summer" name="tags">
+                                <p class="text-xl">Summer</p>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <input class="inpCheck" type="checkbox"  value="party" name="tags">
+                                <p class="text-xl">Party</p>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <input class="inpCheck" type="checkbox" value="beach" name="tags">
+                                <p class="text-xl">Beach</p>
+                            </div>
+
+                        </div>
+
+                        <!--Colors-->
+                        <div>
+                            <p class="text-2xl font-bold">Colors</p>
+                            <div class="flex gap-2 mt-2">
+                                <input class="inpCheck" type="checkbox" value="red" name="tags">
+                                <p class="text-xl">Red</p>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <input class="inpCheck" type="checkbox"  value="blue" name="tags">
+                                <p class="text-xl">Blue</p>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <input class="inpCheck" type="checkbox"  value="white" name="tags">
+                                <p class="text-xl">White</p>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <input class="inpCheck" type="checkbox" value="green" name="tags">
+                                <p class="text-xl">Green</p>
+                            </div>
+
+                        </div>
+
+                        <!--Arrivals-->
+                        <div>
+                            <p class="text-2xl font-bold">Arrivals</p>
+                            <div class="flex gap-2 mt-2">
+                                <input class="inpCheck" type="checkbox" value="new" name="tags">
+                                <p class="text-xl">New</p>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <input class="inpCheck" type="checkbox"  value="old" name="tags">
+                                <p class="text-xl">Old</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--side filter section-->
+                <div style="background-color:rgba(241, 243, 246, 0.8);" id="side-filter"
+                    class="fixed h-[100vh] left-[-60%] w-[60%] transition-all duration-1000 top-0  p-5 z-50">
+
+                    <div class="relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-5 absolute left-[90%]  top-5  place-self-center z-50 cursor-pointer text-black"
+                            id="side-filter-close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+
+                    <div class="flex flex-col gap-10 mt-5">
+                        <p class="text-3xl font-bold">Filter</p>
+                          <!--Occasion-->
+                          <div>
+                            <p class="text-2xl font-bold">Occasion</p>
+                            <div class="flex gap-2 mt-2">
+                                <input class="inpCheck" type="checkbox"  value="summer" name="tags">
+                                <p class="text-xl">Summer</p>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <input class="inpCheck" type="checkbox"  value="party" name="tags">
+                                <p class="text-xl">Party</p>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <input class="inpCheck" type="checkbox"  value="beach" name="tags">
+                                <p class="text-xl">Beach</p>
+                            </div>
+
+                        </div>
+
+                        <!--Colors-->
+                        <div>
+                            <p class="text-2xl font-bold">Colors</p>
+                            <div class="flex gap-2 mt-2">
+                                <input class="inpCheck" type="checkbox"  value="red" name="tags">
+                                <p class="text-xl">Red</p>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <input class="inpCheck" type="checkbox"  value="blue" name="tags">
+                                <p class="text-xl">Blue</p>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <input class="inpCheck" type="checkbox" value="white" name="tags">
+                                <p class="text-xl">White</p>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <input class="inpCheck" type="checkbox"  value="green" name="tags">
+                                <p class="text-xl">Green</p>
+                            </div>
+
+                        </div>
+
+                        <!--Arrivals-->
+                        <div>
+                            <p class="text-2xl font-bold">Arrivals</p>
+                            <div class="flex gap-2 mt-2">
+                                <input class="inpCheck" type="checkbox"  value="new" name="tags">
+                                <p class="text-xl">New</p>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <input class="inpCheck" type="checkbox"  value="old" name="tags">
+                                <p class="text-xl">Old</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--right side-->
+                <div style="background-color: #F1F3F6;" class="w-full rounded-md  p-5">
+                    <!--search box-->
+                    <div class="w-full mt-4">
+                        <input type="text" placeholder="Search" class="w-full h-10 px-5 rounded-lg border-2 focus:outline-blue-950">
+                    </div>
+
+                    <!--dress-->
+                    <div id="products" class="mt-5 flex  justify-start items-center flex-wrap  gap-5">
+                    </div>
+                </div>
+            </section>
+
+            <!--join news letter-->
+            <section class="text-center mt-14">
+                <p class="text-2xl font-bold">Join Our News Letter</p>
+                <p class="leading-tight">Sign up for our email newspaper to get exclusive discounts, updatesn and more
+                </p>
+                <input type="text" class="inline-block w-full m-auto p-2 mt-4 border outline-none border-black"
+                    placeholder="Enter your email">
+                <button class="bg-black text-white px-5 py-3 rounded-md m-auto mt-4">Subscribe <i
+                        class="fa-solid fa-arrow-right"></i> </button>
+
+            </section>
+        </div>
+
+        <!--footer-->
+        <section class="text-white mt-14 p-9 flex flex-col gap-y-3" style="background-color: #1D232C;" id="contact">
+            <p class="font-bold text-2xl">Nostra</p>
+            <p>Specializes in providing high-quality, stylish products for your wardrobe</p>
+            <div class="flex gap-10">
+                <i class="fa-brands fa-instagram hover:text-pink-500"></i>
+                <i class="fa-brands fa-facebook hover:text-blue-500"></i>
+                <i class="fa-brands fa-x-twitter "></i>
+            </div>
+            <p>&copy 2023 Nostra.com</p>
+        </section>
+    </main>
+
+
+
+    <script src="./collections_shirts.js"></script>
+
+</body>
+
+</html>
